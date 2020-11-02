@@ -24,7 +24,7 @@ class CoronaNews extends Component {
       )
     })
         return (
-          <div>
+          <div className="container">
           <h1 className='corona'>Corona News</h1>
     <div className="row coronarow">
       {covidnews}
