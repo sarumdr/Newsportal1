@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import DateHeadline from "./component/DateHeadline";
+import NavBar from "./component/NavBar";
+import { BrowserRouter, Switch, Route,withRouter } from 'react-router-dom';
+import Bodypage from "./component/Bodypage";
+import Fetching from "./component/Fetching";
+import NewsItem from './component/NewsItem';
+import Coronafetch from './component/Coronafetch';
+import CoronaNews from './component/CoronaNews';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Fetching/>
+        <Coronafetch/>
+        <DateHeadline/>
+        {/* <NavBar/> */}
+        <BrowserRouter>
+            <Switch>
+                <Route component={Bodypage} exact path={'/'}/>
+                <Route path={'/newsitem'} component={NewsItem}/>
+                <Route path={'/corona'} component={CoronaNews}/>
+            </Switch>
+        </BrowserRouter>
+
+
+
+
+          </div>
   );
 }
 
-export default App;
+export default withRouter(App);

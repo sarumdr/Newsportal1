@@ -1,0 +1,107 @@
+
+.name{
+    font-size: 60px;
+    font-family: cursive;
+    align-content: center;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:0;
+}
+*/ 
+.news{
+    max-width: 1000px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 50px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+} 
+
+.image{
+    width: 40%;
+    height: 40%;
+}
+
+.news_title{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.news_description{
+    font-size:10px;
+}
+
+.news_published{
+    font-size: 10px;
+}
+
+.title{
+    color: red;
+    font-size: 12px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 1px;
+}
+
+.description{
+    font-size: 10px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+.table_news{
+    margin-left:  40px;
+    margin-right: 10px;
+    
+}
+
+.table_heading{
+    background-color:grey;
+    color: white;
+    padding:10px;
+}
+
+.th_released{
+padding-right: 30px;
+}
+.calender{
+    filter: invert(1);
+    width:40px;
+}
+.imagecarousel{
+    margin:0px 20px;
+}
+.corona{
+    color: red;
+    text-align: center;
+}
+.coronarow{
+    margin:0 10px;
+    
+}
+.coronanews{
+    padding:20px;
+}
+
+.coronatitle{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.coronadesc{
+    font-size: 14px;
+    margin-left: 10px;
+}
